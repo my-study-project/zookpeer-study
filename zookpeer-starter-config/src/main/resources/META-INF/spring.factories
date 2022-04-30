@@ -2,4 +2,5 @@
 org.springframework.context.ApplicationContextInitializer=\
   com.js.config.ZookeeperApplicationContextInitializer
 com.js.config.PropertySourceLocator=\
-  com.js.config.ZookpeerPropertySourceLocator
+  com.js.config.ZookpeerPropertySourceLocator,\
+  com.js.config.LocalCustomPropertySourceLocator
