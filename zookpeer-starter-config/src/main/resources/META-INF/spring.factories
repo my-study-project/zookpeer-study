@@ -1,4 +1,5 @@
-
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.js.config.CustomEnvironmentPostProcessor
 org.springframework.context.ApplicationContextInitializer=\
   com.js.config.ZookeeperApplicationContextInitializer
 com.js.config.PropertySourceLocator=\

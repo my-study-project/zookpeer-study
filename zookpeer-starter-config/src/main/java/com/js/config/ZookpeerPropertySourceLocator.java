@@ -21,10 +21,10 @@ public class ZookpeerPropertySourceLocator implements PropertySourceLocator {
 
     public ZookpeerPropertySourceLocator() {
         curatorFramework = CuratorFrameworkFactory.builder()
-                .connectString("192.168.1.9:2181")
+                .connectString("127.0.0.1:2181")
                 .sessionTimeoutMs(20000)
                 .connectionTimeoutMs(20000)
-                .retryPolicy(new ExponentialBackoffRetry(1000, 3))
+                .retryPolicy(new ExponentialBackoffRetry(20000, 3))
                 .namespace("config")
                 .build();
         curatorFramework.start();
